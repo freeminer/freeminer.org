@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+
+{% block content %}
+    {#
+    <div id="download">
+        <a href="https://github.com/celeron55/minetest/zipball/stable-0.4" class="button" id="download-button">
+            <span class="small"><em>Source code</em></span>
+            <span class="big">Minetest 0.4.<sub>3</sub></span>
+        </a>
+        <div class="others" id="download-others">
+            <a href="download.php#windows">Windows</a> &#183; <a href="download.php#linux">Linux</a> &#183; <a href="download.php#osx">OS X</a> &#183; <a href="download.php#others">Others</a>
+        </div>
+    </div>
+    #}
+    <div class="space"></div>
+    <div id="main">
+        <div class="laptop">&nbsp;</div>
+        <div>
+            <h1>About Freeminer</h1>
+            <p>Freeminer is a sandbox game based on Minetest. It is inspired by Minecraft, Infiniminer and the like.</p>
+            <p>Freeminer is developed by a <a href="https://github.com/freeminer/freeminer/graphs/contributors">number of contributors</a> from all over the globe.</p>
+            <p>It aims to make the game fun while trading off some bits of perfectionism.</p>
+        </div>
+        <div class="features-list">
+            <h1>Features</h1>
+            <ul>
+            <li> Walk around, dig and build in an infinite voxel world and craft stuff from raw materials to help you along the way.</li>
+            <li>Robust and powerful server-side modding API.</li>
+            <li>Multiplayer support for tens of players, via servers hosted by users.</li>
+            <li>Almost infinite world and a fairly good map generator (limited to ±31000 blocks in all directions).</li>
+            <li>Runs natively on Windows, Linux, OS X and *BSD.</li>
+            </ul>
+        </div>
+        <div class="features">&nbsp;</div>
+    </div>
+
+{#
+<script>
+var OSName="unknown";
+if (navigator.appVersion.indexOf("Win")!=-1) OSName="win";
+if (navigator.appVersion.indexOf("Mac")!=-1) OSName="mac";
+if (navigator.appVersion.indexOf("X11")!=-1) OSName="unix";
+if (navigator.appVersion.indexOf("Linux")!=-1) OSName="linux";
+if (OSName == "win") {
+    var a = document.getElementById("download-button");
+    a.innerHTML = '<span class="small"><em>Windows</em> (XP/Vista/7)</span> <span class="big">Minetest 0.4.<sub>3</sub></span>';
+    a.href = "https://github.com/downloads/celeron55/minetest/minetest-0.4.3-win32.zip";
+    document.getElementById("download-others").innerHTML = '<a href="download.php#linux">Linux</a> &#183; <a href="download.php#osx">OS X</a> &#183; <a href="download.php#others">Others</a> &#183; <a href="download.php#source">Source code</a>';
+} else if (OSName == "mac") {
+    var a = document.getElementById("download-button");
+    a.innerHTML = '<span class="small"><em>OS X</em></span> <span class="big">Minetest 0.4.<sub>x</sub></span>';
+    a.href = "https://github.com/toabi/minetest-mac/downloads";
+    document.getElementById("download-others").innerHTML = '<a href="download.php#windows">Windows</a> &#183; <a href="download.php#linux">Linux</a> &#183; <a href="download.php#others">Others</a> &#183; <a href="download.php#source">Source code</a>';
+}
+</script>
+#}
+{% endblock %}

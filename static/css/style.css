@@ -1,0 +1,292 @@
+body {
+    background-color: #f8f7f5;
+    font-family: Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+a {
+    color: #7e7e7e;
+}
+a:hover {
+    color: #9b9b9b;
+}
+
+.container {
+    margin: 0 auto;
+    width: 940px;
+}
+
+#top {
+    height: 100px;
+    background-color: #1e1c1d;
+}
+
+#top .info {
+    float: right;
+    padding-top: 15px;
+    color: #61ad6d;
+    font-size: 0.7em;
+}
+
+#bar {
+    background-color: #61ad6d;
+    background-image: url("/static/img/shadow.png");
+    background-repeat: repeat-x;
+    background-position: bottom;
+}
+
+.title {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 2em;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+#menu ul {
+    float: right;
+    padding-top: 11px;
+    padding-bottom: 11px;
+}
+
+#menu ul li {
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 0.8em;
+    color: white;
+    height: 29px;
+    padding-top: 14px;
+}
+
+#menu ul li.active {
+    font-weight: bold;
+}
+
+#menu ul li.github {
+    background-image: url("/static/img/github.png");
+    background-repeat: no-repeat;
+    padding-left: 32px;
+    margin-left: 5px;
+    background-position: left center;
+}
+
+#menu hr {
+    clear: both;
+    border: 0;
+    height: 1px;
+    background-color: #48764f;
+}
+
+.logo {
+    background-image: url("/static/img/logo.png");
+    width: 265px;
+    height: 120px;
+    z-index: 100;
+    position: absolute;
+    top: 13px;
+}
+
+#promo h1 {
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 2.3em;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+#promo h1 em {
+    text-decoration: underline;
+    font-style: italic;
+}
+
+#promo .videos {
+    background-image: url("/static/img/videos.png");
+    background-repeat: no-repeat;
+    width: 994px;
+    height: 340px;
+    margin-top: 20px;
+}
+
+#content {
+    background-image: url("/static/img/gradient.png");
+    background-repeat: repeat-x;
+}
+
+#download {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#download .button {
+    width: 540px;
+    height: 64px;
+    padding-top: 10px;
+    margin: 0 auto;
+    background-image: url("/static/img/download.png");
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+#download .others {
+    text-align: center;
+    font-size: 0.9em;
+}
+
+#download .big {
+    padding-left: 200px;
+    font-size: 2em;
+    color: white;
+}
+
+#download .big sub {
+    font-size: 0.8em;
+}
+
+#download .small {
+    padding-left: 200px;
+    padding-top: 10px;
+}
+
+#main {
+    border: 1px solid #e4e4e2;
+    background-color: #f1f1ef;
+    border-radius: 7px;
+    padding: 60px 60px 30px 60px;
+    position: relative;
+    font-size: 0.85em;
+}
+
+#main h1 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 2em;
+    margin-bottom: 35px;
+}
+
+#main h2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+#main p {
+    margin-bottom: 30px;
+}
+
+#main hr {
+    border: 0;
+    background-color: #cfcfcd;
+    height: 1px;
+    margin: 70px 0;
+}
+
+#main .laptop {
+    width: 370px;
+    height: 344px;
+    background-image: url("/static/img/laptop.png");
+    float: right;
+    margin-right: -60px;
+}
+
+
+#main .devlaptop {
+    width: 370px;
+    height: 344px;
+    background-image: url("/static/img/dev.png");
+    float: right;
+    margin-right: -60px;
+}
+
+#main .features {
+    width: 440px;
+    height: 400px;
+    background-image: url("/static/img/features.png");
+    margin-left: -60px;
+    position: absolute;
+    bottom: 0;
+}
+
+#main .features-list {
+    margin-left: 440px;
+}
+
+#main .features-list ul {
+    list-style-type: disc;
+}
+
+#main .features-list li {
+    padding-bottom: 25px;
+}
+
+#main .features-list h1 {
+    padding-top: 30px;
+}
+
+#footer {
+    font-size: 0.7em;
+    margin: 35px 0;
+}
+
+#footer li {
+    margin: 8px 0;
+}
+
+.space {
+    height: 55px;
+}
+
+.p {
+    margin-bottom: 30px;
+}
+
+h2 em {
+    font-style: italic;
+}
+
+.devwiki em {
+    border-bottom: 1px dotted black;
+}
+
+a.devwiki {
+    text-decoration: none;
+    color: black;
+}
+
+#bar a {
+    color: white;
+    text-decoration: none;
+}
+#bar a:hover {
+    text-decoration: underline;
+}
+
+.info a {
+    text-decoration: none;
+    color: #61ad6d;
+}
+
+.download-note {
+    float: right;
+    width: 50%;
+}
+
+.clear {
+    clear: both;
+}
+
+.sourcetable {
+	margin: 1em;
+	margin-left: 3em;
+}
+
+.sourcetable tr {
+	border: 0px;
+	padding: 0px;
+}
+
+.sourcetable td {
+	border: 0px;
+	padding-left: 0.2em;
+	padding-right: 0.2em;
+	border-bottom: 1px solid #888888;;
+}
