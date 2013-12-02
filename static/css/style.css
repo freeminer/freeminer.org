@@ -197,13 +197,13 @@ a:hover {
     margin-right: -60px;
 }
 
-#main .features {
+#main .features-img {
     width: 440px;
     height: 400px;
     background-image: url("/static/img/features.png");
     margin-left: -60px;
-    position: absolute;
-    bottom: 0;
+    float:left;
+    margin-top:60px;
 }
 
 #main .features-list {
@@ -220,6 +220,11 @@ a:hover {
 
 #main .features-list h1 {
     padding-top: 30px;
+}
+
+#main .multiplayer {
+    margin-top:60px;
+    clear: both;
 }
 
 #footer {
