@@ -16,7 +16,7 @@ a:hover {
 }
 
 #top {
-    height: 100px;
+    height: 50px;
     background-color: #1e1c1d;
 }
 
@@ -82,15 +82,15 @@ a:hover {
     height: 120px;
     z-index: 100;
     position: absolute;
-    top: 13px;
+    top: -33px;
 }
 
 #promo h1 {
     text-align: center;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 2.3em;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 20px;
+    padding-bottom: 30px;
 }
 
 #promo h1 em {
@@ -152,7 +152,7 @@ a:hover {
     border: 1px solid #e4e4e2;
     background-color: #f1f1ef;
     border-radius: 7px;
-    padding: 60px 60px 30px 60px;
+    padding: 40px 60px 40px 60px;
     position: relative;
     font-size: 0.85em;
 }
