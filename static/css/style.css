@@ -126,6 +126,7 @@ a:hover {
     display: block;
     text-decoration: none;
     color: black;
+    position: relative;
 }
 
 #download .others {
@@ -134,7 +135,9 @@ a:hover {
 }
 
 #download .big {
-    padding-left: 200px;
+    position: absolute;
+    left: 200px;
+    top: 25px;
     font-size: 2em;
     color: white;
 }
@@ -144,8 +147,9 @@ a:hover {
 }
 
 #download .small {
-    padding-left: 200px;
-    padding-top: 10px;
+    position: absolute;
+    left: 200px;
+    top: 10px;
 }
 
 #main {
