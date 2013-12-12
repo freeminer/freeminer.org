@@ -118,7 +118,7 @@ a:hover {
 }
 
 #download .button {
-    width: 540px;
+    width: 590px;
     height: 64px;
     padding-top: 10px;
     margin: 0 auto;
@@ -136,7 +136,7 @@ a:hover {
 
 #download .big {
     position: absolute;
-    left: 200px;
+    left: 202px;
     top: 25px;
     font-size: 2em;
     color: white;
@@ -148,7 +148,7 @@ a:hover {
 
 #download .small {
     position: absolute;
-    left: 200px;
+    left: 202px;
     top: 10px;
 }
 
