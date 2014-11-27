@@ -2,7 +2,7 @@
 
 {% block content %}
     <div id="download">
-        <a href="https://github.com/freeminer/freeminer/archive/0.4.10.4.zip" class="button" id="download-button">
+        <a href="https://github.com/freeminer/freeminer/releases/download/0.4.10.4/freeminer-0.4.10.4.zip" class="button" id="download-button">
             <span class="small"><em id="download-title">Source code</em></span>
             <span class="big">Freeminer 0.4.<sub>10.<sub><sub><sub>4</sub></sub></sub></sub></span>
         </a>
@@ -17,8 +17,9 @@
             <h1>About Freeminer</h1>
             <p>Freeminer is a Minecraft-inspired sandbox game.</p>
             <p>Freeminer is based on Minetest which is developed by a <a href="https://github.com/minetest/minetest/graphs/contributors">number of contributors</a> from all over the globe.</p>
-            <p>It aims to make the game fun while trading off some bits of perfectionism.</p>
+            <p>Unlike Minetest it aims to make the game fun while trading off some bits of perfectionism.</p>
         </div>
+        <hr class="clear" />
         <div class="features">
         <div class="features-img">&nbsp;</div>
         <div class="features-list">
@@ -48,7 +49,7 @@ if (navigator.appVersion.indexOf("X11")!=-1) OSName="unix";
 if (navigator.appVersion.indexOf("Linux")!=-1) OSName="linux";
 if (OSName == "win") {
     document.getElementById("download-title").innerHTML = "Windows (XP/Vista/7)";
-    document.getElementById("download-button").href = "https://github.com/freeminer/freeminer/releases/download/0.4.8.0/freeminer-0.4.8.0.zip";
+    document.getElementById("download-button").href = "https://github.com/freeminer/freeminer/releases/download/0.4.9.3/freeminer-0.4.9.3-win32.zip";
 }
 </script>
 {% endblock %}

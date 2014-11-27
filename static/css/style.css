@@ -118,7 +118,7 @@ a:hover {
 }
 
 #download .button {
-    width: 540px;
+    width: 590px;
     height: 64px;
     padding-top: 10px;
     margin: 0 auto;
@@ -126,6 +126,7 @@ a:hover {
     display: block;
     text-decoration: none;
     color: black;
+    position: relative;
 }
 
 #download .others {
@@ -134,7 +135,9 @@ a:hover {
 }
 
 #download .big {
-    padding-left: 200px;
+    position: absolute;
+    left: 202px;
+    top: 25px;
     font-size: 2em;
     color: white;
 }
@@ -144,8 +147,9 @@ a:hover {
 }
 
 #download .small {
-    padding-left: 200px;
-    padding-top: 10px;
+    position: absolute;
+    left: 202px;
+    top: 10px;
 }
 
 #main {
@@ -186,6 +190,8 @@ a:hover {
     background-image: url("/static/img/laptop.png");
     float: right;
     margin-right: -60px;
+    padding-bottom: 70px;
+    background-repeat: no-repeat;
 }
 
 
@@ -203,7 +209,6 @@ a:hover {
     background-image: url("/static/img/features.png");
     margin-left: -60px;
     float:left;
-    margin-top:60px;
 }
 
 #main .features-list {
@@ -279,6 +284,10 @@ a.devwiki {
     clear: both;
 }
 
+hr.clear {
+    clear: both;
+}
+
 .sourcetable {
 	margin: 1em;
 	margin-left: 3em;
@@ -294,4 +303,10 @@ a.devwiki {
 	padding-left: 0.2em;
 	padding-right: 0.2em;
 	border-bottom: 1px solid #888888;;
+}
+
+.multiplayer, .multiplayer td, .multiplayer th {
+    font-size: 1em;
+    padding: 4px;
+    vertical-align: middle;
 }
