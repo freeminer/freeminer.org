@@ -2,7 +2,7 @@
 
 {% block content %}
     <div id="download">
-        <a href="https://github.com/freeminer/freeminer/releases/download/0.4.10.4/freeminer-0.4.10.4.zip" class="button" id="download-button">
+        <a href="https://github.com/freeminer/freeminer/releases/download/0.4.11.5/freeminer-0.4.11.5.zip" class="button" id="download-button">
             <span class="small"><em id="download-title">Source code</em></span>
             <span class="big">Freeminer 0.4.<sub>10.<sub><sub><sub>4</sub></sub></sub></sub></span>
         </a>
@@ -48,8 +48,8 @@ if (navigator.appVersion.indexOf("Mac")!=-1) OSName="mac";
 if (navigator.appVersion.indexOf("X11")!=-1) OSName="unix";
 if (navigator.appVersion.indexOf("Linux")!=-1) OSName="linux";
 if (OSName == "win") {
-    document.getElementById("download-title").innerHTML = "Windows (XP/Vista/7)";
-    document.getElementById("download-button").href = "https://github.com/freeminer/freeminer/releases/download/0.4.10.4/freeminer-0.4.10.4-win32.zip";
+    document.getElementById("download-title").innerHTML = "Windows";
+    document.getElementById("download-button").href = "https://github.com/freeminer/freeminer/releases/download/0.4.11.5/freeminer-0.4.11.5-win32.zip";
 }
 </script>
 {% endblock %}
