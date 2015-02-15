@@ -47,9 +47,16 @@ if (navigator.appVersion.indexOf("Win")!=-1) OSName="win";
 if (navigator.appVersion.indexOf("Mac")!=-1) OSName="mac";
 if (navigator.appVersion.indexOf("X11")!=-1) OSName="unix";
 if (navigator.appVersion.indexOf("Linux")!=-1) OSName="linux";
+if (navigator.appVersion.indexOf("Android")!=-1) OSName="android";
+
 if (OSName == "win") {
     document.getElementById("download-title").innerHTML = "Windows";
     document.getElementById("download-button").href = "https://github.com/freeminer/freeminer/releases/download/0.4.11.5/freeminer-0.4.11.5-win32.zip";
+}
+
+if (OSName == "android") {
+    document.getElementById("download-title").innerHTML = "Android";
+    document.getElementById("download-button").href = "https://play.google.com/store/apps/details?id=org.freeminer.freeminer";
 }
 </script>
 {% endblock %}
