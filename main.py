@@ -1,5 +1,5 @@
 from flask import Flask, render_template, redirect
-from flask.ext.assets import Environment, Bundle
+from flask_assets import Environment, Bundle
 from jinja2.exceptions import TemplateNotFound
 
 app = Flask(__name__)
