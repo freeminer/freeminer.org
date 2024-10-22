@@ -1,1 +1,1 @@
-http://freeminer.org/ website.
+https://freeminer.org/ website.
