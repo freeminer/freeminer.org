@@ -371,23 +371,56 @@ a:focus-visible, button:focus-visible { outline: 3px solid #246936; outline-offs
 #main p { line-height: 1.6; }
 .features { display: flow-root; }
 .servers-list { overflow-x: auto; }
-@media (max-width: 760px) {
-    #main { padding: 28px 20px; }
-    #main .laptop { width: 45%; margin-right: -20px; height: 240px; padding-bottom: 0; }
-    #main .features-img { width: 45%; height: 280px; background-size: contain; background-repeat: no-repeat; margin-left: -20px; }
-    #main .features-list { margin-left: 46%; }
-    #main hr { margin: 30px 0; }
-    #menu ul { float: none; display: flex; flex-wrap: wrap; justify-content: center; }
-    #menu ul li { padding-left: 10px; padding-right: 10px; }
-    #promo h1 { font-size: 1.8em; padding: 32px 12px; line-height: 1.35; }
-    #download .button { width: 100%; max-width: 590px; background: #315f3b; border-radius: 8px; text-align: center; height: auto; padding: 16px 0; }
-    #download .small, #download .big { position: static; display: block; color: white; }
-    .video-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+@media (max-width: 960px) {
+    #main { padding: 32px 24px; }
+    .about { display: flow-root; }
+    #main .laptop { width: 42%; height: auto; margin: 0 0 20px 24px; padding: 0; }
+    .features { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 28px; align-items: center; }
+    #main .features-img { width: 100%; height: auto; aspect-ratio: 440 / 400; margin: 0; float: none; background-size: contain; background-repeat: no-repeat; }
+    #main .features-photo { aspect-ratio: 16 / 10; }
+    #main .features-list { margin: 0; min-width: 0; }
+    #main .features-list ul { padding-left: 20px; }
+    #main .features-list h1 { padding-top: 0; }
+    #main .features-list li { line-height: 1.6; padding-bottom: 16px; }
+    #main hr { margin: 32px 0; }
+    #main h1 { line-height: 1.2; }
 }
-@media (max-width: 480px) {
-    #main .laptop, #main .features-img { display: none; }
-    #main .features-list { margin-left: 18px; }
+@media (max-width: 760px) {
+    #top { height: 86px; }
+    #top .container { position: relative; }
+    .logo { top: 0; left: 0; width: 220px; height: 100px; background-size: contain; background-repeat: no-repeat; }
+    #menu ul { float: none; display: flex; flex-wrap: wrap; gap: 8px; padding: 16px 0; }
+    #menu ul li, #menu ul li.github { float: none; flex: 1 0 26%; height: auto; padding: 0; margin: 0; background: none; font-size: .9em; }
+    #menu ul li a { display: flex; justify-content: center; align-items: center; min-height: 44px; padding: 0 8px; border-radius: 6px; background: #315f3b; box-sizing: border-box; }
+    #menu ul li.active a { background: #24482c; }
+    #promo h1 { font-size: 2em; padding: 28px 0; line-height: 1.3; }
+    #download { padding: 24px 0; }
+    #download .button { width: 100%; max-width: 590px; background: #315f3b; border-radius: 8px; text-align: center; height: auto; padding: 16px 0; }
+    #download .small, #download .big { position: static; display: block; color: white; line-height: 1.3; }
+    #main { font-size: 1em; overflow-wrap: anywhere; }
+    #main h1, #main .media-section h2 { font-size: 1.75em; margin-bottom: 20px; }
+    #main p { margin-bottom: 20px; }
+    #main a { color: #346640; }
+    .media-toolbar button, .media-toolbar > a { min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center; justify-content: center; }
+    .video-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+    .video-player { min-height: 200px; }
+    #main .multiplayer { margin-top: 32px; padding: 0; }
+    #footer { font-size: .85em; line-height: 1.6; margin: 24px 0; }
+    #footer a { display: inline-block; padding: 12px 0; }
+}
+@media (max-width: 600px) {
+    .container { width: calc(100% - 24px); }
+    #main { padding: 24px 18px; }
+    .about { display: flex; flex-direction: column; }
+    #main .laptop { order: 2; float: none; width: min(100%, 260px); margin: 0 auto; }
+    .features { grid-template-columns: minmax(0, 1fr); gap: 20px; }
+    #main .features-img { order: 2; }
+    #main .features-photo { aspect-ratio: 16 / 9; }
+    #main .features-photo img { object-fit: contain; background: #e3e8df; }
+    .media-section { padding-top: 28px; margin-top: 28px; }
+    .media-toolbar { gap: 8px; }
+    .media-toolbar > a, .media-toolbar button { flex: 1 1 auto; }
+}
+@media (max-width: 400px) {
     .video-grid { grid-template-columns: minmax(0, 1fr); }
-    #main h1 { margin-bottom: 20px; }
-    #main .multiplayer { margin-top: 32px; }
 }

@@ -13,6 +13,7 @@
     </div>
     {#<div class="space"></div>#}
     <div id="main">
+        <div class="about">
         <div class="laptop">
             <div class="laptop-frame">
                 {% if 0 and media.images %}
@@ -21,11 +22,12 @@
                 {% endif %}
             </div>
         </div>
-        <div>
+        <div class="about-copy">
             <h1>About Freeminer</h1>
             <p>Freeminer is a Minecraft-inspired sandbox game.</p>
             <p>Freeminer is based on Minetest/Luanti which is developed by a <a href="https://github.com/minetest/minetest/graphs/contributors">number of contributors</a> from all over the globe.</p>
             <p>Unlike Minetest/Luanti it aims to make the game fun while trading off some bits of perfectionism.</p>
+        </div>
         </div>
         <hr class="clear" />
         <div class="features">
@@ -49,7 +51,7 @@
         </div>
         </div>
         <section id="videos" class="media-section" aria-labelledby="videos-heading">
-            <p class="eyebrow">Dev vlog</p>
+            <p class="eyebrow" id="videos-heading">Dev vlog</p>
             <!--h2 id="videos-heading">See Freeminer in action</h2>
             <p>Worlds, experiments and gameplay from the Freeminer channel.</p-->
             <div id="video-player" class="video-player" hidden></div>
