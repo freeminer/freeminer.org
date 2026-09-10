@@ -1,8 +1,9 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Explore, dig and build in Freeminer, an open-source voxel sandbox with dynamic liquids, weather and far-reaching worlds." />
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     {% assets "css_all" %}
         <link href="{{ ASSET_URL }}" rel="stylesheet" type="text/css" />
@@ -17,7 +18,7 @@
     <span class="info">
         {# <a href="/contribute/">We're looking for Mac OS X maintainer.</a> #}
     </span>
-    <a class="logo" href="/"></a>
+    <a class="logo" href="/" aria-label="Freeminer home"></a>
 </div>
 </div>
 <div id="bar" class="main">
@@ -28,6 +29,9 @@
             <li {% if page == link.0 %}class="active"{% endif %}><a href="/{{ link.0 }}/">{{ link.1 }}</a></li>
             {% endfor %}
             <!--li><a href="//forum.freeminer.org/">Forum</a></li-->
+            <!--li><a href="/#videos">Videos</a></li>
+            <li><a href="/#screenshots">Screenshots</a></li-->
+            <li><a href="https://discord.gg/jyywFCTXS5">Discord</a></li>
             <li><a href="//servers.freeminer.org/">Servers</a></li>
             <li><a href="//build.freeminer.org/?C=M&O=D">Dev-builds</a></li>
             <li class="github"><a href="https://github.com/freeminer/freeminer">Github</a></li>
@@ -35,7 +39,7 @@
         <hr />
     </div>
     <div id="promo">
-        <h1>Walk around, <em>dig</em> and <em>build</em> in an infinite voxel world.</h1>
+        <h1>Walk around, <em>dig</em> and <em>build</em> in an ~infinite voxel world.</h1>
     </div>
 </div>
 </div>
@@ -50,7 +54,6 @@
 <div class="container">
     <ul>
     <!--li>IRC: #freeminer @ Freenode</li-->
-    <li><a href="https://discord.gg/jyywFCTXS5">Discord</a></li>
     <li>Design by <a href="http://prowseed.com/">prowseed.com</a></li>
     </ul>
 </div>

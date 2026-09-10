@@ -3,9 +3,9 @@
 {% block content %}
     <div id="download">
         <!--a href="https://github.com/freeminer/freeminer/releases/download/0.4.14.8/freeminer-0.4.14.8.zip" class="button" id="download-button"-->
-        <a href="https://github.com/freeminer/freeminer/archive/refs/heads/master.zip" class="button" id="download-button">
+        <a href="https://github.com/freeminer/freeminer" class="button" id="download-button">
             <span class="small"><em id="download-title">Source code</em></span>
-            <span class="big">Freeminer 5.<sub>16.<sub><sub><sub>1.<sub>0</sub></sub></sub></sub></sub></span>
+            <span class="big">Freeminer <!--5.<sub>16.<sub><sub><sub>1.<sub>0</sub></sub></sub></sub></sub--></span>
         </a>
         {#<div class="others" id="download-others">
             <a href="download.php#windows">Windows</a> &#183; <a href="download.php#linux">Linux</a> &#183; <a href="download.php#osx">OS X</a> &#183; <a href="download.php#others">Others</a>
@@ -13,7 +13,14 @@
     </div>
     {#<div class="space"></div>#}
     <div id="main">
-        <div class="laptop">&nbsp;</div>
+        <div class="laptop">
+            <div class="laptop-frame">
+                {% if 0 and media.images %}
+                {% set laptop_image = media.images | random %}
+                <img class="laptop-screen" src="{{ laptop_image.src }}" alt="{{ laptop_image.alt }}" />
+                {% endif %}
+            </div>
+        </div>
         <div>
             <h1>About Freeminer</h1>
             <p>Freeminer is a Minecraft-inspired sandbox game.</p>
@@ -22,25 +29,79 @@
         </div>
         <hr class="clear" />
         <div class="features">
+        {% if media.images %}
+        {% set features_image = media.images | random %}
+        <div class="features-img features-photo">
+            <img src="{{ features_image.src }}" alt="{{ features_image.alt }}" loading="lazy" />
+        </div>
+        {% else %}
         <div class="features-img">&nbsp;</div>
+        {% endif %}
         <div class="features-list">
             <h1><a href="https://github.com/freeminer/freeminer/blob/master/CHANGELOG.md">Unique features</a></h1>
             <ul>
             <li>1000x better view range and name</li>
-            <li>Much closer to infinity world size (±2147483647 blocks in all directions) <a href="https://github.com/freeminer/freeminer/tree/32bit">in this branch</a></li>
+            <li>Much closer to infinity world size (±2147483647 blocks in all directions)</li>
             <li>10x faster and more reliable networking.</li>
-            <li>Maybe runs even in your <a href="https://play.freeminer.org/">browser</li>
+            <li>Earth 1:1 mapgen.</li>
+            <li>Maybe runs even in your <a href="https://play.freeminer.org/">browser</a></li>
             </ul>
         </div>
         </div>
+        <section id="videos" class="media-section" aria-labelledby="videos-heading">
+            <p class="eyebrow">Dev vlog</p>
+            <!--h2 id="videos-heading">See Freeminer in action</h2>
+            <p>Worlds, experiments and gameplay from the Freeminer channel.</p-->
+            <div id="video-player" class="video-player" hidden></div>
+            <div class="media-toolbar">
+                <a href="https://www.youtube.com/@freeminer7878">More on YouTube &#8599;</a>
+                <button type="button" id="random-video" hidden>Random video</button>
+            </div>
+            <p id="video-status" class="media-status" role="status"></p>
+            <div class="video-grid">
+                {% for video in media.videos %}
+                <a class="video-card" href="https://www.youtube.com/watch?v={{ video.id }}" data-video-id="{{ video.id }}" data-video-title="{{ video.title }}">
+                    <span class="video-thumbnail">
+                        <img src="https://i.ytimg.com/vi/{{ video.id }}/hqdefault.jpg" alt="" width="480" height="360" loading="lazy" />
+                        <span class="play-icon" aria-hidden="true">&#9654;</span>
+                    </span>
+                    <span class="video-title">{{ video.title }}</span>
+                </a>
+                {% endfor %}
+            </div>
+        </section>
+        <!--section id="screenshots" class="media-section" aria-labelledby="screenshots-heading">
+            <p class="eyebrow">A world worth exploring</p>
+            <h2 id="screenshots-heading">Views from Freeminer</h2>
+            <div id="slideshow" aria-label="Freeminer screenshots" aria-roledescription="carousel">
+                {% for slide in media.images %}
+                <figure class="screenshot-slide">
+                    <img src="{{ slide.src }}" alt="{{ slide.alt }}" loading="lazy" />
+                    <figcaption>{{ slide.caption }}</figcaption>
+                </figure>
+                {% else %}
+                <div class="screenshot-placeholder">
+                    <span class="placeholder-landscape" aria-hidden="true"></span>
+                    <strong>More worlds to discover</strong>
+                    <p>Our screenshot gallery is coming soon.</p>
+                </div>
+                {% endfor %}
+                <div id="slideshow-controls" class="media-toolbar" hidden>
+                    <button type="button" id="previous-slide" aria-label="Previous screenshot">&#8592; Previous</button>
+                    <span id="slide-status" role="status"></span>
+                    <button type="button" id="next-slide" aria-label="Next screenshot">Next &#8594;</button>
+                </div>
+            </div>
+        </section-->
         <div class="multiplayer">
-            <h1><a href="//servers.freeminer.org/">Multiplayer</a></h1>
+            <h1><a href="//servers.freeminer.org/">Multiplayer</a> + <a href="//servers.luanti.org/">Luanti</a></h1>
             <div class="servers-list" id="server_list"></div>
             <script>var master = {root: '//servers.freeminer.org/', no_ping:1, no_uptime:1, no_flags:1, no_version:1, no_address:1, limit:10, clients_min:2};</script>
             <script src="//servers.freeminer.org/list.js"></script>
         </div>
     </div>
 
+<script src="{{ url_for('static', filename='js/media.js') }}" defer></script>
 <script type="text/javascript">
 var OSName="unknown";
 if (navigator.appVersion.indexOf("Win")!=-1) OSName="win";

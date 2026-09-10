@@ -1,8 +1,12 @@
 from flask import Flask, render_template, redirect
 from flask_assets import Environment, Bundle
 from jinja2.exceptions import TemplateNotFound
+import json
+import os
 
 app = Flask(__name__)
+with open(os.path.join(app.root_path, 'media.json')) as media_file:
+    homepage_media = json.load(media_file)
 assets = Environment(app)
 
 css = Bundle(
@@ -17,7 +21,7 @@ assets.register('css_all', css)
 @app.route("/<page>/")
 def show_page(page):
     try:
-        return render_template("pages/{}.html".format(page), page=page)
+        return render_template("pages/{}.html".format(page), page=page, media=homepage_media)
     except TemplateNotFound:
         return redirect("/")
 

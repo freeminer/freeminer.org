@@ -1,0 +1,14 @@
+{
+  "videos": [
+    {"id": "Pn767EfaXA0", "title": "Voxel earth : Monaco"},
+    {"id": "93f_oWg60cc", "title": "FMFS"},
+    {"id": "3qTUzmo8_hI", "title": "Farmesh Hong Kong"}
+  ],
+  "images": [
+    {
+      "src": "/static/media/NY.jpg",
+      "alt": "An aerial view of New York recreated in Freeminer, with voxel skyscrapers and rivers beneath a clear blue sky",
+      "caption": "New York in Freeminer"
+    }
+  ]
+}
