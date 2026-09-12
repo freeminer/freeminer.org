@@ -9,6 +9,11 @@
       "src": "/static/media/NY.jpg",
       "alt": "An aerial view of New York recreated in Freeminer, with voxel skyscrapers and rivers beneath a clear blue sky",
       "caption": "New York in Freeminer"
+    },
+    {
+      "src": "/static/media/world.png",
+      "alt": "View from 20000km",
+      "caption": ""
     }
   ]
 }
