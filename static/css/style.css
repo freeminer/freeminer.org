@@ -134,6 +134,34 @@ a:hover {
     font-size: 0.9em;
 }
 
+#download .download-options {
+    width: min(590px, 100%);
+    margin: 8px auto 0;
+    text-align: center;
+    color: #315f3b;
+}
+
+#download .download-options summary {
+    cursor: pointer;
+    padding: 8px;
+    text-decoration: underline;
+}
+
+#download .download-options-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px 20px;
+    padding: 12px 16px;
+    border: 1px solid #d7ddd5;
+    border-radius: 6px;
+    background: #fff;
+}
+
+#download .download-options-list a {
+    color: #315f3b;
+}
+
 #download .big {
     position: absolute;
     left: 202px;
