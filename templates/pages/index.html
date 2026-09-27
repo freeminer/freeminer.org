@@ -56,13 +56,13 @@
         </div>
         </div>
         <section id="videos" class="media-section" aria-labelledby="videos-heading">
-            <p class="eyebrow" id="videos-heading">Dev vlog</p>
+            <!--p class="eyebrow" id="videos-heading">Dev vlog</p-->
             <!--h2 id="videos-heading">See Freeminer in action</h2>
             <p>Worlds, experiments and gameplay from the Freeminer channel.</p-->
             <div id="video-player" class="video-player" hidden></div>
             <div class="media-toolbar">
-                <a href="https://www.youtube.com/@freeminer7878">More on YouTube &#8599;</a>
-                <button type="button" id="random-video" hidden>Random video</button>
+                <a href="https://www.youtube.com/@freeminer7878">Dev vlog &#8599;</a>
+                <!--button type="button" id="random-video" hidden>Random video</button-->
             </div>
             <p id="video-status" class="media-status" role="status"></p>
             <div class="video-grid">
@@ -113,7 +113,8 @@
 const downloads = [
     { label: "Windows 64-bit", href: "https://build.freeminer.org/freeminer-latest-win64.zip", platforms: ["win"] },
     { label: "Android (ARM64)", href: "https://build.freeminer.org/android/app-arm64-v8a-release-latest.apk", platforms: ["android"] },
-    { label: "Linux x86_64", href: "https://build.freeminer.org/linux/freeminer-latest-x86_64.AppImage", platforms: ["linux"] },
+    { label: "Android F-droid", href: "https://f-droid.org/en/packages/org.freeminer.freeminer/", platforms: ["android"] },
+    { label: "Linux appimage x86_64", href: "https://build.freeminer.org/linux/freeminer-latest-x86_64.AppImage", platforms: ["linux"] },
     { label: "Source code", href: "https://github.com/freeminer/freeminer", platforms: ["unknown"] },
     { label: "Other builds", href: "https://build.freeminer.org/", platforms: ["linux", "mac"] }
 ];
